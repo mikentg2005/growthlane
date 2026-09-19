@@ -1,0 +1,32 @@
+title: GrowthLane
+description: >-
+  Honest reviews and practical guides on mindset, communication, and the skills
+  that actually move your career and life forward.
+url: "https://mikentg2005.github.io"
+baseurl: "/growthlane"
+author: GrowthLane
+
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock

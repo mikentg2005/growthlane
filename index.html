@@ -1,0 +1,17 @@
+---
+layout: default
+title: Home
+---
+<h1>GrowthLane</h1>
+<p>Honest reviews and practical guides on mindset, communication, and the skills that actually move your career and life forward.</p>
+
+<div class="post-listing">
+  {% for post in site.posts %}
+  <div class="post-list-item">
+    <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <p class="excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+  </div>
+  {% else %}
+  <p>New articles coming soon.</p>
+  {% endfor %}
+</div>
