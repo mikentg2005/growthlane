@@ -5,8 +5,9 @@ permalink: /disclosure/
 ---
 # Affiliate Disclosure
 
-GrowthLane participates in affiliate programs, including ClickBank and
-Digistore24. This means that some of the links on this site are affiliate
+GrowthLane participates in affiliate programs, including ClickBank,
+Digistore24, and the Amazon Associates Program. As an Amazon Associate I
+earn from qualifying purchases. This means that some of the links on this site are affiliate
 links — if you click one and make a purchase, I may earn a commission.
 
 **This never costs you anything extra.** The price you pay is the same
