@@ -9,6 +9,10 @@ author: GrowthLane
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
+# Fill these in once created — leave blank/omit to keep them off the site.
+google_analytics: ""        # e.g. "G-XXXXXXXXXX"
+google_site_verification: "" # the content value from Search Console's HTML tag method
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
