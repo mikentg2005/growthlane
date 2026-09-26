@@ -145,3 +145,22 @@ h1, h2, h3 {
   body { font-size: 17px; }
   .post-title { font-size: 1.6rem; }
 }
+
+.summary-box {
+  background: var(--banner-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px 18px;
+  margin: 24px 0;
+}
+
+.summary-box h2 {
+  font-size: 1rem;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+}
+
+.summary-box p { margin: 0 0 10px; }
+.summary-box p:last-child { margin-bottom: 0; }

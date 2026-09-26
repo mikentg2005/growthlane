@@ -1,11 +1,20 @@
 ---
 title: "Life Optimization Coaching Certification Review: Is Dr. Joe Rubino's Program Worth It?"
 date: 2026-09-25
+last_modified_at: 2026-09-26
 ---
 
 If you've spent any time looking into personal development programs, you already know the pattern: a slick landing page, a countdown timer, and a promise that one course will fix your health, your finances, your relationships, and your career all at once. Most of the time, that's a sign to close the tab.
 
 This one is a little different — not because it's flashier, but because there's an actual person behind it with a three-decade paper trail. That's worth a closer, unhurried look.
+
+<div class="summary-box" markdown="1">
+## In three sentences
+
+Dr. Joe Rubino's Life Optimization Coaching Certification is a self-paced audio and video course built around six areas of life. It costs $97, comes with a 60-day money-back guarantee, and has an optional $97 upsell you do not need. It works best as a structured way to work through personal goals, but it is unclear who formally recognizes the "certification".
+
+**Who it is not for:** anyone who wants an accredited coaching license, or a course that goes deep on a single topic.
+</div>
 
 ## The short version
 

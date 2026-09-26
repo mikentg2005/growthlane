@@ -1,11 +1,20 @@
 ---
 title: "6 Best Books on Sales and Persuasion (and Who Each One Is Really For)"
 date: 2026-09-25
+last_modified_at: 2026-09-26
 ---
 
 Most "best books" lists are just a row of famous covers. This one tries to do something more useful: for each book, what it is actually good at, where it falls short, and what kind of reader will get the most out of it.
 
 Sales and persuasion are worth studying even if you never hold a sales job. You negotiate salary, pitch ideas, and ask people for things every week. These six books cover different parts of that skill, so you can pick by need instead of by hype.
+
+<div class="summary-box" markdown="1">
+## In three sentences
+
+These six books cover different parts of sales and persuasion: everyday communication, why people say yes, negotiation, the mindset of selling, and complex business sales. Pick by what you need, not by which cover is most famous. No book makes you persuasive by reading alone, so try one idea from each chapter in a real conversation.
+
+**Who this list is not for:** anyone who wants a ready-made script or template rather than a book to read and apply.
+</div>
 
 ## Quick picks
 
