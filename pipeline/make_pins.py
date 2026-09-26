@@ -117,11 +117,20 @@ SPEC_DIR = Path(__file__).parent / "pins"
 
 
 def site_base():
-    """Read url and baseurl from _config.yml."""
-    cfg = (ROOT / "_config.yml").read_text(encoding="utf-8")
-    url = re.search(r'^url:\s*"?([^"\n]+)"?', cfg, re.M).group(1).strip()
-    baseurl = re.search(r'^baseurl:\s*"?([^"\n]*)"?', cfg, re.M).group(1).strip()
-    return url.rstrip("/") + baseurl.rstrip("/")
+    """Public site URL: pipeline/cloudflare.yml overrides _config.yml (the live host)."""
+    def read(path):
+        cfg = path.read_text(encoding="utf-8")
+        url = re.search(r'^url:\s*"?([^"\n]+)"?', cfg, re.M)
+        baseurl = re.search(r'^baseurl:\s*"?([^"\n]*)"?', cfg, re.M)
+        return url.group(1).strip() if url else None, baseurl.group(1).strip() if baseurl else None
+
+    url, baseurl = read(ROOT / "_config.yml")
+    override = Path(__file__).parent / "cloudflare.yml"
+    if override.exists():
+        o_url, o_base = read(override)
+        url = o_url or url
+        baseurl = o_base if o_base is not None else baseurl
+    return url.rstrip("/") + (baseurl or "").rstrip("/")
 
 
 def post_url(post_file):
