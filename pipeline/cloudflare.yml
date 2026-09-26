@@ -1,0 +1,11 @@
+# Jekyll config override for the Cloudflare deployment (used together with _config.yml).
+url: "https://growthlane.mikentg2005.workers.dev"
+baseurl: ""
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - pipeline
+  - products
+  - "*.ps1"
+  - "assets/pins/*.txt"

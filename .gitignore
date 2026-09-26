@@ -4,3 +4,6 @@ _site/
 .bundle/
 vendor/
 Gemfile.lock
+
+_site_cloudflare/
+growthlane-site.zip
