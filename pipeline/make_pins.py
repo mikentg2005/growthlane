@@ -1,4 +1,16 @@
-"""Generate Pinterest pin images (1000x1500) for a GrowthLane article."""
+"""Generate Pinterest pin images (1000x1500) and copy-paste text for GrowthLane articles.
+
+Each article has a spec file in pipeline/pins/<slug>.json. Run from the repo root:
+    python pipeline/make_pins.py            # every spec whose images or text file are missing
+    python pipeline/make_pins.py --force    # regenerate everything
+    python pipeline/make_pins.py <slug>     # one article only
+
+Output: assets/pins/<slug>-pin-<x>.png and assets/pins/<slug>.txt (title, description,
+destination link with UTM tags, alt text). Posting to Pinterest stays manual.
+"""
+import json
+import re
+import sys
 import textwrap
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
@@ -47,7 +59,7 @@ def wrap_and_draw(draw, text, font, max_width, start_y, fill, line_spacing=1.25,
     return y
 
 
-def make_pin(filename, eyebrow, headline, subtext, facts):
+def make_pin(filename, eyebrow, headline, subtext, facts, cta="Read the full review at growthlane blog"):
     img = Image.new("RGB", (W, H), BG)
     draw = ImageDraw.Draw(img)
 
@@ -93,32 +105,71 @@ def make_pin(filename, eyebrow, headline, subtext, facts):
     draw.rectangle([0, H - 160, W, H], fill=ACCENT)
     draw.text((margin, H - 115), "GrowthLane", font=logo_font, fill="#ffffff")
     cta_font = ImageFont.truetype(str(SUB_FONT), 30)
-    draw.text((margin, H - 60), "Read the full review at growthlane blog", font=cta_font, fill="#e8f0ec")
+    draw.text((margin, H - 60), cta, font=cta_font, fill="#e8f0ec")
 
     out_path = OUT_DIR / filename
     img.save(out_path, "PNG")
     print(f"Saved {out_path}")
 
 
-FACTS = [
-    ("Price", "$97 one-time"),
-    ("Guarantee", "60 days, no questions"),
-    ("Inside", "27 audios + 4 videos"),
-]
+ROOT = Path(__file__).parent.parent
+SPEC_DIR = Path(__file__).parent / "pins"
+
+
+def site_base():
+    """Read url and baseurl from _config.yml."""
+    cfg = (ROOT / "_config.yml").read_text(encoding="utf-8")
+    url = re.search(r'^url:\s*"?([^"\n]+)"?', cfg, re.M).group(1).strip()
+    baseurl = re.search(r'^baseurl:\s*"?([^"\n]*)"?', cfg, re.M).group(1).strip()
+    return url.rstrip("/") + baseurl.rstrip("/")
+
+
+def post_url(post_file):
+    """Build the public URL from a post filename (permalink /:year/:month/:day/:title/)."""
+    name = Path(post_file).stem  # 2026-09-25-some-title
+    y, m, d, title = name.split("-", 3)
+    return f"{site_base()}/{y}/{m}/{d}/{title}/"
+
+
+def build_text(spec):
+    url = post_url(spec["post"])
+    utm = f"?utm_source=pinterest&utm_medium=social&utm_campaign={spec['slug']}"
+    lines = [f"Article: {spec['post']}", f"Destination link (paste into the pin): {url}{utm}", ""]
+    for pin in spec["pins"]:
+        lines += [
+            f"--- Pin {pin['suffix'].upper()} ({spec['slug']}-pin-{pin['suffix']}.png) ---",
+            f"Title: {pin['pinterest_title']}",
+            f"Alt text: {pin['alt_text']}",
+            "",
+        ]
+    lines += ["Description (same for both pins):", spec["pinterest_description"], "", spec["disclosure_line"], ""]
+    return "\n".join(lines)
+
+
+def run_spec(path, force):
+    spec = json.loads(path.read_text(encoding="utf-8"))
+    slug = spec["slug"]
+    facts = [tuple(f) for f in spec["facts"]]
+    made = False
+    for pin in spec["pins"]:
+        png = f"{slug}-pin-{pin['suffix']}.png"
+        if force or not (OUT_DIR / png).exists():
+            make_pin(png, pin["eyebrow"], pin["headline"], pin["subtext"], facts, spec.get("cta", "Read the full review at growthlane blog"))
+            made = True
+    txt = OUT_DIR / f"{slug}.txt"
+    if force or not txt.exists():
+        txt.write_text(build_text(spec), encoding="utf-8")
+        print(f"Saved {txt}")
+        made = True
+    if not made:
+        print(f"{slug}: up to date")
+
 
 if __name__ == "__main__":
-    make_pin(
-        "life-optimization-review-pin-a.png",
-        eyebrow="Honest Review",
-        headline="Is There Actually a Real System for Getting Your Life Together?",
-        subtext="We reviewed a 30-year coach's personal development program \u2014 the good and the unclear parts.",
-        facts=FACTS,
-    )
-
-    make_pin(
-        "life-optimization-review-pin-b.png",
-        eyebrow="Honest Review",
-        headline="A Coaching Program With 2,000+ Real Clients, Reviewed",
-        subtext="What's actually inside, what it costs, and who it's really for.",
-        facts=FACTS,
-    )
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    force = "--force" in sys.argv
+    specs = sorted(SPEC_DIR.glob("*.json"))
+    if args:
+        specs = [p for p in specs if p.stem in args]
+    for spec_path in specs:
+        run_spec(spec_path, force)
