@@ -84,4 +84,6 @@ If you read only one, **Never Split the Difference** gives the most usable payof
 
 A last honest note: no book will make you persuasive by reading alone. The value comes from picking one idea per chapter and trying it in a real conversation this week.
 
+If negotiation specifically is your problem, whether that's salary talks or a tense conversation with a client, see our [5 best books on negotiation]({% post_url 2026-09-28-best-books-on-negotiation %}) for a more focused list.
+
 *As an Amazon Associate I earn from qualifying purchases. Links above go to the specific edition reviewed here.*

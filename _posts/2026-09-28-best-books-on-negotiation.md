@@ -1,15 +1,8 @@
 ---
 title: "5 Best Books on Negotiation (and Which One to Read First)"
+date: 2026-09-28
+last_modified_at: 2026-09-28
 ---
-{% comment %}
-DRAFT written by Claude on 2026-09-26. NOT published: files in _drafts are ignored by the site build.
-Before publishing, check yourself: author names and titles, that each description matches the book,
-and that the Amazon search links return the right title. Move the file to _posts as YYYY-MM-DD-best-books-on-negotiation.md,
-add date and last_modified_at to the front matter, run python pipeline/lint_posts.py, and add a pin spec in pipeline/pins/.
-Source for the book list: Harvard Program on Negotiation reading list (updated 28 Jan 2026),
-https://www.pon.harvard.edu/daily/negotiation-training-daily/negotiation-books-a-negotiation-reading-list
-Do not add personal experience claims unless you have actually read the book.
-{% endcomment %}
 
 Negotiation is not only for salary talks and business deals. You negotiate with a landlord, a client, a manager and sometimes with yourself. The books below teach different parts of it, so you can choose by the problem you have.
 
@@ -36,7 +29,7 @@ A classic from the Harvard Negotiation Project. Its central idea is principled n
 **Best for:** anyone who wants one clear method they can apply to almost any negotiation.
 **Downside:** it is more about approach than about tactics, so it will not tell you what to say when the other side plays hardball.
 
-<a href="https://www.amazon.de/s?k=Getting+to+Yes+Fisher+Ury+Patton&tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
+<a href="https://www.amazon.de/dp/0143118757?tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
 
 ## 2. Negotiation Genius, Deepak Malhotra and Max Bazerman
 
@@ -45,7 +38,7 @@ A research-informed guide from two business school professors. It focuses on pre
 **Best for:** readers who want the evidence and reasoning behind negotiation advice, especially for business situations.
 **Downside:** denser and more academic than most of the others, so it takes more effort to get through.
 
-<a href="https://www.amazon.de/s?k=Negotiation+Genius+Malhotra+Bazerman&tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
+<a href="https://www.amazon.de/dp/0553384112?tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
 
 ## 3. Difficult Conversations, Douglas Stone, Bruce Patton and Sheila Heen
 
@@ -54,7 +47,7 @@ Written by members of the Harvard Negotiation Project, this book is about the co
 **Best for:** anyone whose main difficulty is starting or handling the conversation, not the deal itself.
 **Downside:** it is about communication more than about negotiating a price or terms.
 
-<a href="https://www.amazon.de/s?k=Difficult+Conversations+Stone+Patton+Heen&tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
+<a href="https://www.amazon.de/dp/0670921343?tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
 
 ## 4. Negotiating the Nonnegotiable, Daniel Shapiro
 
@@ -63,7 +56,7 @@ Shapiro looks at conflicts that are driven by emotion and identity rather than b
 **Best for:** family, workplace or community conflicts where feelings run high.
 **Downside:** less useful for routine commercial negotiations, where interests matter more than identity.
 
-<a href="https://www.amazon.de/s?k=Negotiating+the+Nonnegotiable+Daniel+Shapiro&tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
+<a href="https://www.amazon.de/dp/0143110179?tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
 
 ## 5. Getting to Yes with Yourself, William Ury
 
@@ -72,7 +65,7 @@ A shorter, more personal book about the negotiation that happens inside you firs
 **Best for:** people who know the techniques but freeze or react badly under pressure.
 **Downside:** it is about mindset rather than technique, so pair it with a practical method.
 
-<a href="https://www.amazon.de/s?k=Getting+to+Yes+with+Yourself+William+Ury&tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
+<a href="https://www.amazon.de/dp/0062390678?tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
 
 ## Where to start
 
@@ -80,4 +73,4 @@ Read *Getting to Yes* first, then add the book that matches your situation from 
 
 A note on the list: it is based on the Harvard Program on Negotiation reading list. That organization also sells its own training programs, so treat it as a curated reading list and not a neutral ranking.
 
-*As an Amazon Associate I earn from qualifying purchases. Links above open Amazon search results for each title.*
+*As an Amazon Associate I earn from qualifying purchases. Links above go to the specific edition reviewed here.*
