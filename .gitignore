@@ -7,3 +7,5 @@ Gemfile.lock
 
 _site_cloudflare/
 growthlane-site.zip
+node_modules/
+.wrangler/

@@ -1,0 +1,8 @@
+# Cloudflare Worker config for GrowthLane (static site, no server code).
+# Deploys the built site (pipeline/build_cloudflare.ps1) to the existing
+# "growthlane" Worker at https://growthlane.mikentg2005.workers.dev
+name = "growthlane"
+compatibility_date = "2026-09-28"
+
+[assets]
+directory = "./_site_cloudflare"

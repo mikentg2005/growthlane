@@ -9,3 +9,9 @@ exclude:
   - products
   - "*.ps1"
   - "assets/pins/*.txt"
+  - package.json
+  - package-lock.json
+  - node_modules
+  - wrangler.toml
+  - growthlane-site.zip
+  - .wrangler
