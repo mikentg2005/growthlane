@@ -35,7 +35,7 @@ To be fair about the limits of what we can confirm from the outside: Rubino's ow
 - **27 audio recordings** covering the core coaching method
 - **26 written transcripts** of that same content, if you'd rather read than listen
 - **4 video trainings** — building a life-optimization plan, setting up a personal-development structure, finding your purpose, and understanding what coaching actually does
-- An **optional 50-question certification exam** (70% to pass) if you want the credential
+- An **optional 50-question certification exam** if you want the credential — per the vendor's own sales page, you need 70% correct to pass
 
 One thing worth being precise about: it's genuinely unclear from the sales page who formally recognizes this "certification," or whether it carries weight with clients or employers the way an accredited credential would. If your main reason for buying is the certificate itself rather than the material, that's a question worth emailing the vendor about *before* you pay, not after.
 
