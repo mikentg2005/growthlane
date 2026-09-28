@@ -31,7 +31,7 @@ Published in 1936, it is still the standard starting point. Its core idea is sim
 **Best for:** anyone who wants better everyday communication before learning tactics.
 **Downside:** the examples and language feel dated, and some advice can read as obvious. It teaches attitude more than technique.
 
-<a href="https://www.amazon.de/s?k=How+to+Win+Friends+and+Influence+People+Dale+Carnegie&tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
+<a href="https://www.amazon.de/dp/1439199191?tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
 
 ## 2. Influence: The Psychology of Persuasion, Robert Cialdini
 
@@ -40,7 +40,7 @@ A research-based look at why people comply with requests. Cialdini organizes it 
 **Best for:** readers who want to understand the "why" and are comfortable with a more academic tone.
 **Downside:** denser than the others, and it explains the principles better than it hands you a script to use tomorrow morning.
 
-<a href="https://www.amazon.de/s?k=Influence+The+Psychology+of+Persuasion+Robert+Cialdini&tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
+<a href="https://www.amazon.de/dp/0062937650?tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
 
 ## 3. Never Split the Difference, Chris Voss
 
@@ -49,7 +49,7 @@ Written by a former FBI hostage negotiator, this book turns high-stakes negotiat
 **Best for:** salary talks, client negotiations, and any conversation where you and the other person want different things.
 **Downside:** the hostage stories make some tactics sound more dramatic than a typical workplace deal needs. Use the ideas, but adapt the intensity.
 
-<a href="https://www.amazon.de/s?k=Never+Split+the+Difference+Chris+Voss&tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
+<a href="https://www.amazon.de/dp/1847941494?tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
 
 ## 4. The Psychology of Selling, Brian Tracy
 
@@ -58,7 +58,7 @@ A long-standing sales classic that focuses as much on the seller's mindset as on
 **Best for:** people in or entering sales who want motivation and structure in one place.
 **Downside:** the tone is upbeat and self-help flavored. If you prefer research-driven writing, Cialdini will suit you better.
 
-<a href="https://www.amazon.de/s?k=The+Psychology+of+Selling+Brian+Tracy&tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
+<a href="https://www.amazon.de/dp/0785288066?tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
 
 ## 5. To Sell Is Human, Daniel Pink
 
@@ -67,7 +67,7 @@ Pink's argument is that most of us spend much of our working lives persuading an
 **Best for:** people who dislike the idea of "selling" but need to pitch, convince, or lead.
 **Downside:** lighter on step-by-step technique than the others. Think of it as a mindset reset, not a manual.
 
-<a href="https://www.amazon.de/s?k=To+Sell+Is+Human+Daniel+Pink&tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
+<a href="https://www.amazon.de/dp/1786891719?tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
 
 ## 6. SPIN Selling, Neil Rackham
 
@@ -76,7 +76,7 @@ Built on research into successful sales calls, it teaches a questioning method (
 **Best for:** B2B and high-value sales roles.
 **Downside:** if you sell low-cost products or just want general persuasion skills, much of it will be more than you need.
 
-<a href="https://www.amazon.de/s?k=SPIN+Selling+Neil+Rackham&tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
+<a href="https://www.amazon.de/dp/0566076896?tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
 
 ## Where to start
 
@@ -84,4 +84,4 @@ If you read only one, **Never Split the Difference** gives the most usable payof
 
 A last honest note: no book will make you persuasive by reading alone. The value comes from picking one idea per chapter and trying it in a real conversation this week.
 
-*As an Amazon Associate I earn from qualifying purchases. Links above open Amazon search results for each title.*
+*As an Amazon Associate I earn from qualifying purchases. Links above go to the specific edition reviewed here.*
