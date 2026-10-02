@@ -3,7 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f7f5ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121815" media="(prefers-color-scheme: dark)">
   {% seo %}
+  {% feed_meta %}
+  <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="preload" href="{{ '/assets/fonts/public-sans-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/assets/fonts/newsreader-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   {% if site.google_site_verification and site.google_site_verification != "" %}
   <meta name="google-site-verification" content="{{ site.google_site_verification }}">
@@ -19,11 +26,11 @@
   {% endif %}
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   {% include header.html %}
-  <main class="container">
+  <main id="main">
     {{ content }}
   </main>
   {% include footer.html %}
-  {% feed_meta %}
 </body>
 </html>

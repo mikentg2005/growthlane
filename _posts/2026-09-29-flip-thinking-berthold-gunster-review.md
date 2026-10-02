@@ -1,5 +1,8 @@
 ---
 title: "Flip Thinking by Berthold Gunster: An Honest Review"
+description: "A first-hand review of Berthold Gunster's Flip Thinking: the 'yes, but' to 'yes, and' idea, what works, where it is uneven, and who should read it."
+category: "Book review"
+basis: first-hand
 date: 2026-09-29
 last_modified_at: 2026-09-29
 ---

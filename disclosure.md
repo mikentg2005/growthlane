@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: page
 title: Affiliate Disclosure
 permalink: /disclosure/
 ---
-# Affiliate Disclosure
 
 GrowthLane participates in affiliate programs, including ClickBank,
 Digistore24, and the Amazon Associates Program. As an Amazon Associate I

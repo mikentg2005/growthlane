@@ -1,0 +1,7 @@
+{%- assign p = include.post -%}
+<span class="chip chip--cat">{{ p.category | default: "Article" }}</span>
+{%- if p.basis == "first-hand" -%}
+<span class="chip chip--first" title="I read or used this myself">First-hand</span>
+{%- else -%}
+<span class="chip chip--research" title="Built from public sources; I say what I could not verify">Research-based</span>
+{%- endif -%}

@@ -1,5 +1,8 @@
 ---
 title: "5 Best Books on Building Better Habits (and Which One to Start With)"
+description: "Five books on building better habits, from habit loops to starting tiny, with what each is best for and which one to start with."
+category: "Book list"
+basis: research
 date: 2026-10-02
 last_modified_at: 2026-10-02
 ---

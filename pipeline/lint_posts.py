@@ -106,7 +106,8 @@ def lint_file(path, is_draft):
     # The post layout must show the disclosure banner before the content.
     layout = (ROOT / "_layouts" / "post.html").read_text(encoding="utf-8")
     banner_pos = layout.find("disclosure-banner")
-    content_pos = layout.find("{{ content }}")
+    m_content = re.search(r"\{\{\s*content[\s|}]", layout)
+    content_pos = m_content.start() if m_content else -1
     if banner_pos == -1 or content_pos == -1 or banner_pos > content_pos:
         errors.append("_layouts/post.html: disclosure banner is not placed before the post content")
 

@@ -1,5 +1,8 @@
 ---
 title: "5 Best Books on Negotiation (and Which One to Read First)"
+description: "Five books on negotiation, from the classic method to difficult conversations, with who each is best for and which to read first."
+category: "Book list"
+basis: research
 date: 2026-09-28
 last_modified_at: 2026-09-28
 ---

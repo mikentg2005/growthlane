@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: page
 title: Privacy Policy
 permalink: /privacy-policy/
 ---
-# Privacy Policy
 
 _Last updated: {{ site.time | date: "%B %Y" }}_
 

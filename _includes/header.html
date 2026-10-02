@@ -1,8 +1,11 @@
 <header class="site-header">
-  <div class="container header-inner">
-    <a class="site-title" href="{{ '/' | relative_url }}">GrowthLane</a>
-    <nav class="site-nav">
-      <a href="{{ '/' | relative_url }}">Home</a>
+  <div class="wrap header-inner">
+    <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="GrowthLane, home">
+      <span class="wordmark-mark" aria-hidden="true"></span>GrowthLane
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="{{ '/' | relative_url }}#articles">Articles</a>
+      <a href="{{ '/how-i-review/' | relative_url }}">How I review</a>
       <a href="{{ '/about/' | relative_url }}">About</a>
       <a href="{{ '/disclosure/' | relative_url }}">Disclosure</a>
     </nav>

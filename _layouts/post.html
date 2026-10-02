@@ -2,17 +2,61 @@
 layout: default
 ---
 <article class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <p class="post-meta">Published {{ page.date | date: "%B %-d, %Y" }}{% if page.last_modified_at %} &middot; Updated {{ page.last_modified_at | date: "%B %-d, %Y" }}{% endif %}</p>
+  <header class="wrap wrap--measure post-header">
+    <p class="post-eyebrow">{% include chips.html post=page %}</p>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}<p class="post-dek">{{ page.description }}</p>{% endif %}
+    <p class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">Published {{ page.date | date: "%B %-d, %Y" }}</time>
+      {% assign pub_day = page.date | date: "%Y-%m-%d" %}
+      {% assign upd_day = page.last_modified_at | date: "%Y-%m-%d" %}
+      {% if page.last_modified_at and upd_day != pub_day %}<span aria-hidden="true">&middot;</span> <span>Updated {{ page.last_modified_at | date: "%B %-d, %Y" }}</span>{% endif %}
+      <span aria-hidden="true">&middot;</span> {% include reading-time.html text=content %}
+    </p>
+  </header>
 
-  <div class="disclosure-banner">
-    <strong>Heads up:</strong> This article contains affiliate links. If you buy
-    through one of them, I may earn a small commission — at no extra cost to you.
-    I only recommend things I've genuinely researched and believe in.
-    <a href="{{ '/disclosure/' | relative_url }}">Full disclosure here.</a>
+  <div class="wrap wrap--measure">
+    <div class="disclosure-banner">
+      <strong>Heads up:</strong> This article contains affiliate links. If you buy
+      through one of them, I may earn a small commission, at no extra cost to you.
+      I only recommend things I've genuinely researched and believe in.
+      <a href="{{ '/disclosure/' | relative_url }}">Full disclosure here.</a>
+    </div>
+
+    <div class="prose">
+      {{ content | replace: '<strong>Best for:</strong>', '<br><strong class="vl vl-best">Best for:</strong>' | replace: '<strong>Downside:</strong>', '<br><strong class="vl vl-down">Downside:</strong>' }}
+    </div>
+
+    <aside class="how-i-know" aria-label="How this article was made">
+      {% if page.basis == "first-hand" %}
+      <p class="how-i-know-title">First-hand</p>
+      <p>I read this book myself. The opinions and ratings above are mine. Facts about the author and the book come from public sources. <a href="{{ '/how-i-review/' | relative_url }}">How I review</a>.</p>
+      {% else %}
+      <p class="how-i-know-title">Research-based</p>
+      <p>I did not use this myself. This article is built from public sources such as publisher pages, author biographies and independent reviews, and it says what I could not verify. <a href="{{ '/how-i-review/' | relative_url }}">How I review</a>.</p>
+      {% endif %}
+    </aside>
   </div>
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+  {% assign others = site.posts | where_exp: "p", "p.url != page.url" %}
+  {% if others.size > 0 %}
+  <section class="more">
+    <div class="wrap">
+      <h2 class="section-title section-title--small">Keep reading</h2>
+      <div class="cards cards--three">
+        {% for post in others limit: 3 %}
+        <article class="card">
+          <div class="card-top">{% include chips.html post=post %}</div>
+          <h3 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title | split: ' (' | first }}</a></h3>
+          <p class="card-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+            <span aria-hidden="true">&middot;</span>
+            {% include reading-time.html text=post.content %}
+          </p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
 </article>

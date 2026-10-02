@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: page
 title: About
 permalink: /about/
 ---
-# About GrowthLane
 
 <!-- TODO: replace this placeholder with your own real words. Don't invent
      credentials, job titles, or personal stories that aren't true — an honest

@@ -1,5 +1,8 @@
 ---
 title: "Life Optimization Coaching Certification Review: Is Dr. Joe Rubino's Program Worth It?"
+description: "An honest look at Dr. Joe Rubino's $97 Life Optimization Coaching Certification: what is inside, the real downsides, and who should skip it."
+category: "Program review"
+basis: research
 date: 2026-09-25
 last_modified_at: 2026-09-26
 ---

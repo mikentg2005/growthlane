@@ -1,5 +1,8 @@
 ---
 title: "6 Best Books on Sales and Persuasion (and Who Each One Is Really For)"
+description: "Six classic books on sales and persuasion, with what each is best for, where it falls short, and who should read it first."
+category: "Book list"
+basis: research
 date: 2026-09-25
 last_modified_at: 2026-09-26
 ---

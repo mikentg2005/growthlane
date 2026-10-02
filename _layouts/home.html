@@ -1,0 +1,76 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Honest reviews &middot; Practical guides</p>
+      <h1 class="hero-title">Skills worth your time, reviewed without the hype.</h1>
+      <p class="hero-lead">{{ site.description }}</p>
+      <div class="hero-actions">
+        <a class="btn btn--primary" href="#articles">Read the articles</a>
+        <a class="btn btn--ghost" href="{{ '/how-i-review/' | relative_url }}">How I review</a>
+      </div>
+    </div>
+
+    <aside class="legend" aria-label="How articles are labelled">
+      <p class="legend-title">How every article is labelled</p>
+      <div class="legend-row">
+        <span class="chip chip--first">First-hand</span>
+        <p>I read or used it myself. The opinions and ratings are mine.</p>
+      </div>
+      <div class="legend-row">
+        <span class="chip chip--research">Research-based</span>
+        <p>Built from public sources. I say what I could not verify.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section" id="articles">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">Latest articles</h2>
+      <p class="section-sub">{{ site.posts.size }} so far, newest first.</p>
+    </div>
+
+    <div class="cards">
+      {% for post in site.posts %}
+      <article class="card{% if forloop.first %} card--lead{% endif %}">
+        <div class="card-top">
+          {% include chips.html post=post %}
+        </div>
+        <h3 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title | split: ' (' | first }}</a></h3>
+        <p class="card-excerpt">{{ post.description | default: post.excerpt | strip_html | truncatewords: 32 }}</p>
+        <p class="card-meta">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+          <span aria-hidden="true">&middot;</span>
+          {% include reading-time.html text=post.content %}
+        </p>
+      </article>
+      {% else %}
+      <p>New articles coming soon.</p>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tint">
+  <div class="wrap">
+    <h2 class="section-title">How this site works</h2>
+    <div class="principles">
+      <div class="principle">
+        <h3>Downsides, every time</h3>
+        <p>Each recommendation says who it is best for and where it falls short. A review with no downsides is an advert.</p>
+      </div>
+      <div class="principle">
+        <h3>Labelled by how I know</h3>
+        <p>Articles are marked first-hand or research-based, so you can tell opinion from homework.</p>
+      </div>
+      <div class="principle">
+        <h3>Affiliate links, openly</h3>
+        <p>Some links earn a small commission at no cost to you. It never changes the verdict. <a href="{{ '/disclosure/' | relative_url }}">Read the disclosure</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>

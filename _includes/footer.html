@@ -1,9 +1,18 @@
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <p>&copy; {{ site.time | date: "%Y" }} GrowthLane. All rights reserved.</p>
-    <p>
-      <a href="{{ '/privacy-policy/' | relative_url }}">Privacy Policy</a> ·
-      <a href="{{ '/disclosure/' | relative_url }}">Affiliate Disclosure</a>
-    </p>
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-brand">GrowthLane</p>
+      <p class="footer-note">Honest reviews and practical guides on mindset, communication and the skills that move a career forward.</p>
+    </div>
+    <nav class="footer-links" aria-label="Footer">
+      <a href="{{ '/how-i-review/' | relative_url }}">How I review</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/disclosure/' | relative_url }}">Affiliate disclosure</a>
+      <a href="{{ '/privacy-policy/' | relative_url }}">Privacy policy</a>
+    </nav>
+  </div>
+  <div class="wrap footer-legal">
+    <p>Some links on this site are affiliate links. As an Amazon Associate I earn from qualifying purchases.</p>
+    <p>&copy; {{ site.time | date: "%Y" }} GrowthLane</p>
   </div>
 </footer>
