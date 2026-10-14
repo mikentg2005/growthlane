@@ -11,7 +11,7 @@ permalink: /:year/:month/:day/:title/
 
 # Fill these in once created — leave blank/omit to keep them off the site.
 google_analytics: "G-81K7MEF3K4"
-google_site_verification: "v_2FZEDxsZ5JBjMGjrEQ6-POByHpDX6e1L4sTLOgZNM"
+google_site_verification: "q210kZLjlbT8NhwaXmqj0RgJ_CiybSQSybIgW8QbZFA"
 
 plugins:
   - jekyll-sitemap

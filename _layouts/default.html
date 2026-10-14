@@ -12,18 +12,6 @@
   <link rel="preload" href="{{ '/assets/fonts/public-sans-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="{{ '/assets/fonts/newsreader-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  {% if site.google_site_verification and site.google_site_verification != "" %}
-  <meta name="google-site-verification" content="{{ site.google_site_verification }}">
-  {% endif %}
-  {% if site.google_analytics and site.google_analytics != "" %}
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '{{ site.google_analytics }}');
-  </script>
-  {% endif %}
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -32,5 +20,8 @@
     {{ content }}
   </main>
   {% include footer.html %}
+  {% if site.google_analytics and site.google_analytics != "" %}
+  {% include consent.html %}
+  {% endif %}
 </body>
 </html>

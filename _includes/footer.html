@@ -9,6 +9,7 @@
       <a href="{{ '/about/' | relative_url }}">About</a>
       <a href="{{ '/disclosure/' | relative_url }}">Affiliate disclosure</a>
       <a href="{{ '/privacy-policy/' | relative_url }}">Privacy policy</a>
+      {% if site.google_analytics and site.google_analytics != "" %}<button type="button" class="link-button" data-cookie-settings>Cookie settings</button>{% endif %}
     </nav>
   </div>
   <div class="wrap footer-legal">
