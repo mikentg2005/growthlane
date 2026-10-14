@@ -5,6 +5,9 @@ category: "Book review"
 basis: first-hand
 date: 2026-09-29
 last_modified_at: 2026-09-29
+image: /assets/covers/flip-thinking-berthold-gunster-review.png
+pin_image: /assets/pins/flip-thinking-review-pin-a.png
+pin_thumb: /assets/pins/thumbs/flip-thinking-review-pin-a.jpg
 ---
 
 I picked up *Flip Thinking* expecting another generic "positive thinking" book. It turned out to be something more specific and more useful than that, built around a real method called omdenken (Dutch for "flip thinking"), which Berthold Gunster has been teaching for close to thirty years.

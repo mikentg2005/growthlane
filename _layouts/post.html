@@ -27,6 +27,19 @@ layout: default
       {{ content | replace: '<strong>Best for:</strong>', '<br><strong class="vl vl-best">Best for:</strong>' | replace: '<strong>Downside:</strong>', '<br><strong class="vl vl-down">Downside:</strong>' }}
     </div>
 
+    {% if page.pin_image %}
+    <aside class="pin-save" aria-label="Save this article to Pinterest">
+      {% assign pin_media = page.pin_image | absolute_url | url_encode %}
+      {% assign pin_page = page.url | absolute_url | append: '?utm_source=pinterest&utm_medium=social' | url_encode %}
+      <img class="pin-save-img" src="{{ page.pin_thumb | default: page.pin_image | relative_url }}" alt="" width="90" height="135" loading="lazy" decoding="async">
+      <div class="pin-save-text">
+        <p class="pin-save-title">Want to come back to this?</p>
+        <p>Save it to your Pinterest board for later.</p>
+        <a class="btn btn--ghost pin-save-btn" href="https://www.pinterest.com/pin/create/button/?url={{ pin_page }}&amp;media={{ pin_media }}&amp;description={{ page.title | split: ' (' | first | url_encode }}" target="_blank" rel="noopener noreferrer">Save to Pinterest</a>
+      </div>
+    </aside>
+    {% endif %}
+
     <aside class="how-i-know" aria-label="How this article was made">
       {% if page.basis == "first-hand" %}
       <p class="how-i-know-title">First-hand</p>

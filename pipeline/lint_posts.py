@@ -66,6 +66,8 @@ def lint_file(path, is_draft):
         errors.append("front matter: missing date (and none in filename)")
     if not is_draft and not fm.get("last_modified_at"):
         warnings.append("front matter: no last_modified_at (updated date will not show)")
+    if not is_draft and not fm.get("image"):
+        warnings.append("front matter: no image (link previews will have no picture); run pipeline/make_covers.py")
     if "In three sentences" not in body:
         warnings.append("no 'In three sentences' summary box")
     if not re.search(r"not (?:for|to)|skip it|should skip", body, re.I):

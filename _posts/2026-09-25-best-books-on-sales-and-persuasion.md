@@ -5,6 +5,9 @@ category: "Book list"
 basis: research
 date: 2026-09-25
 last_modified_at: 2026-09-26
+image: /assets/covers/best-books-on-sales-and-persuasion.png
+pin_image: /assets/pins/best-books-sales-persuasion-pin-a.png
+pin_thumb: /assets/pins/thumbs/best-books-sales-persuasion-pin-a.jpg
 ---
 
 Most "best books" lists are just a row of famous covers. This one tries to do something more useful: for each book, what it is actually good at, where it falls short, and what kind of reader will get the most out of it.

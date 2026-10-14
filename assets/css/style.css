@@ -455,6 +455,24 @@ a { color: var(--accent-ink); }
 .how-i-know-title { margin-bottom: 0.5rem; }
 .how-i-know p:last-child { margin: 0; }
 
+.pin-save {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin: 2.5rem 0 0;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+.pin-save-img { flex: none; width: 90px; height: auto; border-radius: 4px; border: 1px solid var(--line); }
+.pin-save-text p { margin: 0 0 0.6rem; }
+.pin-save-title { font-family: var(--sans); font-weight: 700; color: var(--ink); }
+.pin-save-btn { padding: 0.55rem 1rem; font-size: 0.9rem; }
+.pin-save + .how-i-know { margin-top: 1rem; }
+
 .more { margin-top: 2.5rem; padding: 2.75rem 0 3.5rem; border-top: 1px solid var(--line); }
 
 /* ---------- Footer ---------- */

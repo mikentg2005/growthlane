@@ -5,6 +5,9 @@ category: "Book list"
 basis: research
 date: 2026-10-02
 last_modified_at: 2026-10-02
+image: /assets/covers/best-books-on-building-better-habits.png
+pin_image: /assets/pins/best-books-habits-pin-a.png
+pin_thumb: /assets/pins/thumbs/best-books-habits-pin-a.jpg
 ---
 
 Most habit advice boils down to "just be more disciplined," which is not very useful advice. The five books below actually explain why habits form and break, and give you something closer to a method than a pep talk. They overlap in places, so this list is about which angle fits your situation, not which one is "best."
