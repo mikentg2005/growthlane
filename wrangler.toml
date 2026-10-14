@@ -6,3 +6,4 @@ compatibility_date = "2026-09-28"
 
 [assets]
 directory = "./_site_cloudflare"
+not_found_handling = "404-page"
