@@ -1,42 +1,39 @@
 ---
 layout: default
 ---
-<section class="hero">
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <p class="eyebrow">Honest reviews &middot; Practical guides</p>
-      <h1 class="hero-title">Skills worth your time, reviewed without the hype.</h1>
-      <p class="hero-lead">{{ site.description }}</p>
-      <div class="hero-actions">
-        <a class="btn btn--primary" href="#articles">Read the articles</a>
-        <a class="btn btn--ghost" href="{{ '/how-i-review/' | relative_url }}">How I review</a>
-      </div>
-    </div>
-
-    <aside class="legend" aria-label="How articles are labelled">
-      <p class="legend-title">How every article is labelled</p>
-      <div class="legend-row">
-        <span class="chip chip--first">First-hand</span>
-        <p>I read or used it myself. The opinions and ratings are mine.</p>
-      </div>
-      <div class="legend-row">
-        <span class="chip chip--research">Research-based</span>
-        <p>Built from public sources. I say what I could not verify.</p>
-      </div>
-    </aside>
+<section class="hero hero--a">
+  <div class="wrap">
+    <p class="eyebrow">Honest reviews &middot; Practical guides</p>
+    <h1 class="hero-a-title">Books and courses for your career,<br>reviewed <em>without the hype.</em></h1>
+    <p class="hero-a-line"><span class="chip chip--first">First-hand</span> I read or used it myself &nbsp;&nbsp; <span class="chip chip--research">Research-based</span> built from public sources, with the gaps stated</p>
   </div>
 </section>
+
+{% assign top = site.posts.first %}
+{% if top %}
+<section class="section hero-a-feature">
+  <div class="wrap">
+    <p class="section-sub">Newest article</p>
+    <article class="card card--feature">
+      <div class="card-top">{% include chips.html post=top %}</div>
+      <h2 class="feature-title"><a href="{{ top.url | relative_url }}">{{ top.title | split: ' (' | first }}</a></h2>
+      <p class="card-excerpt">{{ top.description }}</p>
+      <a class="btn btn--primary" href="{{ top.url | relative_url }}">Read the article</a>
+    </article>
+  </div>
+</section>
+{% endif %}
 
 <section class="section" id="articles">
   <div class="wrap">
     <div class="section-head">
-      <h2 class="section-title">Latest articles</h2>
+      <h2 class="section-title">More articles</h2>
       <p class="section-sub">{{ site.posts.size }} so far, newest first.</p>
     </div>
 
     <div class="cards">
-      {% for post in site.posts %}
-      <article class="card{% if forloop.first %} card--lead{% endif %}">
+      {% for post in site.posts offset: 1 %}
+      <article class="card">
         <div class="card-top">
           {% include chips.html post=post %}
         </div>
@@ -49,7 +46,7 @@ layout: default
         </p>
       </article>
       {% else %}
-      <p>New articles coming soon.</p>
+      <p>More articles coming soon.</p>
       {% endfor %}
     </div>
   </div>
