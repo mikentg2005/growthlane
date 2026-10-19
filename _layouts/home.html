@@ -1,11 +1,16 @@
 ---
 layout: default
 ---
-<section class="hero hero--a">
-  <div class="wrap">
+<section class="hero hero--bg">
+  <picture class="hero-bg">
+    <source media="(max-width: 40rem)" srcset="{{ '/assets/photos/hero-m.jpg' | relative_url }}">
+    <img src="{{ '/assets/photos/hero.jpg' | relative_url }}" alt="" width="2000" height="1125" fetchpriority="high" decoding="async">
+  </picture>
+  <div class="hero-shade" aria-hidden="true"></div>
+  <div class="wrap hero-bg-inner">
     <p class="eyebrow">Honest reviews &middot; Practical guides</p>
     <h1 class="hero-a-title">Books and courses for your career,<br>reviewed <em>without the hype.</em></h1>
-    <p class="hero-a-line"><span class="chip chip--first">First-hand</span> I read or used it myself &nbsp;&nbsp; <span class="chip chip--research">Research-based</span> built from public sources, with the gaps stated</p>
+    <p class="hero-a-line"><span class="chip chip--first">First-hand</span> <span class="hero-a-text">I read or used it myself</span> <span class="chip chip--research">Research-based</span> <span class="hero-a-text">built from public sources, with the gaps stated</span></p>
   </div>
 </section>
 
