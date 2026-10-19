@@ -15,11 +15,14 @@ layout: default
   <div class="wrap">
     <p class="section-sub">Newest article</p>
     <article class="card card--feature">
+      <div class="feature-text">
       {% if top.covers %}<div class="card-covers" aria-hidden="true">{% assign cids = top.covers | split: ',' %}{% for id in cids limit: 5 %}<img src="{{ '/assets/books/' | append: id | append: '.jpg' | relative_url }}" alt="" width="64" height="96" loading="eager" decoding="async">{% endfor %}</div>{% endif %}
       <div class="card-top">{% include chips.html post=top %}</div>
       <h2 class="feature-title"><a href="{{ top.url | relative_url }}">{{ top.title | split: ' (' | first }}</a></h2>
       <p class="card-excerpt">{{ top.description }}</p>
       <a class="btn btn--primary" href="{{ top.url | relative_url }}">Read the article</a>
+      </div>
+      {% if top.photo %}<div class="feature-photo"><img src="{{ top.photo | relative_url }}" alt="{{ top.photo_alt }}" width="800" height="600" loading="eager" decoding="async"></div>{% endif %}
     </article>
   </div>
 </section>
@@ -35,7 +38,8 @@ layout: default
     <div class="cards">
       {% for post in site.posts offset: 1 %}
       <article class="card">
-        {% if post.covers %}<div class="card-covers" aria-hidden="true">{% assign cids = post.covers | split: ',' %}{% for id in cids limit: 5 %}<img src="{{ '/assets/books/' | append: id | append: '.jpg' | relative_url }}" alt="" width="64" height="96" loading="lazy" decoding="async">{% endfor %}</div>{% endif %}
+        {% if post.photo %}<div class="card-media"><img src="{{ post.photo | relative_url }}" alt="" width="640" height="360" loading="lazy" decoding="async"></div>{% endif %}
+        <div class="card-body">
         <div class="card-top">
           {% include chips.html post=post %}
         </div>
@@ -46,6 +50,7 @@ layout: default
           <span aria-hidden="true">&middot;</span>
           {% include reading-time.html text=post.content %}
         </p>
+        </div>
       </article>
       {% else %}
       <p>More articles coming soon.</p>

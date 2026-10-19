@@ -9,6 +9,8 @@ image: /assets/covers/best-books-on-negotiation.png
 pin_image: /assets/pins/best-books-negotiation-pin-a.png
 pin_thumb: /assets/pins/thumbs/best-books-negotiation-pin-a.jpg
 covers: "0143118757,0553384112,0670921343,0143110179,0062390678"
+photo: /assets/photos/negotiation.jpg
+photo_alt: "Two men talking over a laptop in a bright room"
 ---
 
 Negotiation is not only for salary talks and business deals. You negotiate with a landlord, a client, a manager and sometimes with yourself. The books below teach different parts of it, so you can choose by the problem you have.

@@ -21,6 +21,12 @@ layout: default
     </p>
   </header>
 
+  {% if page.photo %}
+  <figure class="wrap post-photo">
+    <img src="{{ page.photo | relative_url }}" alt="{{ page.photo_alt }}" width="1600" height="686" loading="eager" decoding="async">
+  </figure>
+  {% endif %}
+
   <div class="wrap wrap--measure">
     <div class="disclosure-banner">
       <strong>Heads up:</strong> This article contains affiliate links. If you buy

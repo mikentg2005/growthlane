@@ -595,3 +595,22 @@ a { color: var(--accent-ink); }
 .card--feature .card-covers { gap: 0.8rem; margin-bottom: 1.4rem; }
 .card--feature .card-covers img { width: 92px; height: 138px; }
 @media (prefers-reduced-motion: reduce) { .card:hover .card-covers img { transform: none; } }
+
+/* ---------- Photos ---------- */
+.post-photo { margin: 1.75rem auto 0; max-width: 56rem; }
+.post-photo img { display: block; width: 100%; aspect-ratio: 21 / 9; object-fit: cover; border-radius: 6px; }
+@media (max-width: 40rem) { .post-photo img { aspect-ratio: 16 / 9; } }
+
+.card-media img { object-position: center; }
+.cards .card:not(.card--feature) .card-media { aspect-ratio: 16 / 8; }
+
+.card--feature { display: grid; gap: 1.5rem 2.5rem; align-items: center; padding: 0; overflow: hidden; }
+.feature-text { padding: clamp(1.5rem, 4vw, 2.5rem); }
+.feature-photo { align-self: stretch; min-height: 14rem; }
+.feature-photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+@media (min-width: 52rem) {
+  .card--feature { grid-template-columns: 1.15fr 1fr; }
+}
+@media (max-width: 51.99rem) {
+  .feature-photo { order: -1; min-height: 0; aspect-ratio: 16 / 9; }
+}

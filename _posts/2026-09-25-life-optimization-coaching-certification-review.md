@@ -8,6 +8,8 @@ last_modified_at: 2026-09-26
 image: /assets/covers/life-optimization-coaching-certification-review.png
 pin_image: /assets/pins/life-optimization-review-pin-a.png
 pin_thumb: /assets/pins/thumbs/life-optimization-review-pin-a.jpg
+photo: /assets/photos/coaching.jpg
+photo_alt: "Two women sitting by a window, laughing in conversation"
 ---
 
 If you've spent any time looking into personal development programs, you already know the pattern: a slick landing page, a countdown timer, and a promise that one course will fix your health, your finances, your relationships, and your career all at once. Most of the time, that's a sign to close the tab.
