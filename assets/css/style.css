@@ -571,15 +571,16 @@ a { color: var(--accent-ink); }
 
 /* ---------- Book covers ---------- */
 .prose h2 { clear: both; }
+.book-cover-wrap { float: left; width: 110px; margin: 0.35rem 1.25rem 0.75rem 0; }
 .book-cover {
-  float: left;
-  width: 110px;
+  display: block;
+  width: 100%;
   height: auto;
-  margin: 0.35rem 1.25rem 0.75rem 0;
   border-radius: 3px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22), 0 1px 3px rgba(0, 0, 0, 0.18);
 }
-@media (max-width: 40rem) { .book-cover { float: none; display: block; width: 96px; margin: 0.5rem 0 1rem; } }
+.prose .book-cover-wrap ~ p { overflow: hidden; }
+@media (max-width: 40rem) { .book-cover-wrap { width: 78px; margin: 0.3rem 0.9rem 0.6rem 0; } }
 
 .cover-strip { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.25rem 0 0.25rem; padding: 0; }
 .cover-strip li { margin: 0; }
