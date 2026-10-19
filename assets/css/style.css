@@ -567,24 +567,25 @@ a { color: var(--accent-ink); }
   padding: clamp(2.5rem, 6vw, 4rem) 0;
   border-bottom: 0;
   color: #f4f8f5;
+  background: #2c5a44;
   overflow: hidden;
 }
 .hero-bg, .hero-bg img { position: absolute; inset: 0; width: 100%; height: 100%; }
 .hero-bg { z-index: -2; display: block; }
-.hero-bg img { object-fit: cover; object-position: 50% 60%; max-width: none; }
+.hero-bg img { object-fit: cover; object-position: 50% 60%; max-width: none; filter: brightness(1.22) saturate(1.12); }
 .hero-shade {
   position: absolute; inset: 0; z-index: -1;
-  background: linear-gradient(90deg, rgba(8, 18, 14, 0.88) 0%, rgba(8, 18, 14, 0.7) 45%, rgba(8, 18, 14, 0.3) 100%);
+  background: linear-gradient(90deg, rgba(8, 18, 14, 0.58) 0%, rgba(8, 18, 14, 0.32) 50%, rgba(8, 18, 14, 0) 100%);
 }
 @media (max-width: 40rem) {
-  .hero-shade { background: linear-gradient(180deg, rgba(8, 18, 14, 0.78) 0%, rgba(8, 18, 14, 0.7) 100%); }
+  .hero-shade { background: linear-gradient(180deg, rgba(8, 18, 14, 0.52) 0%, rgba(8, 18, 14, 0.42) 100%); }
 }
 .hero-bg-inner { width: 100%; }
-.hero--bg .eyebrow { color: #9fe3c6; }
-.hero-a-title { font-family: var(--serif); font-weight: 600; font-size: clamp(2rem, 4.6vw, 3.4rem); line-height: 1.12; letter-spacing: -0.02em; margin: 0 0 1.1rem; max-width: 24ch; color: #fff; text-shadow: 0 2px 14px rgba(0, 0, 0, 0.35); }
+.hero--bg .eyebrow { color: #b4f0d6; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6); }
+.hero-a-title { font-family: var(--serif); font-weight: 600; font-size: clamp(2rem, 4.6vw, 3.4rem); line-height: 1.12; letter-spacing: -0.02em; margin: 0 0 1.1rem; max-width: 24ch; color: #fff; text-shadow: 0 2px 16px rgba(0, 0, 0, 0.55), 0 1px 3px rgba(0, 0, 0, 0.5); }
 .hero-a-title em { font-style: italic; color: #8fe0bf; }
 .hero-a-line { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; color: #e3ece6; font-size: 0.95rem; margin: 0; }
-.hero-a-text { margin-right: 0.5rem; }
+.hero-a-text { margin-right: 0.5rem; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6); }
 .hero--bg .chip--first { background: #1d7a5c; color: #fff; border-color: #1d7a5c; }
 .hero--bg .chip--research { background: rgba(255, 255, 255, 0.08); color: #f4f8f5; border-color: rgba(255, 255, 255, 0.7); }
 .hero-a-feature { padding-top: 0.5rem; }
