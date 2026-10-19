@@ -568,3 +568,30 @@ a { color: var(--accent-ink); }
 .feature-title a:hover { color: var(--accent-ink); }
 .card--feature .card-excerpt { font-size: 1.1rem; max-width: 40rem; margin-bottom: 1.4rem; }
 .card--feature .btn { align-self: flex-start; }
+
+/* ---------- Book covers ---------- */
+.prose h2 { clear: both; }
+.book-cover {
+  float: left;
+  width: 110px;
+  height: auto;
+  margin: 0.35rem 1.25rem 0.75rem 0;
+  border-radius: 3px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.22), 0 1px 3px rgba(0, 0, 0, 0.18);
+}
+@media (max-width: 30rem) { .book-cover { width: 84px; margin-right: 1rem; } }
+
+.cover-strip { list-style: none; display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 1.25rem 0 0.25rem; padding: 0; }
+.cover-strip li { margin: 0; }
+.cover-strip img { display: block; width: 64px; height: auto; border-radius: 2px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); }
+
+.card-covers { display: flex; justify-content: flex-start; gap: 0.6rem; margin: 0 0 1.1rem; }
+.card-covers img {
+  width: 64px; height: 96px; object-fit: cover; border-radius: 2px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.28);
+  transition: transform 0.2s ease;
+}
+.card:hover .card-covers img { transform: translateY(-3px); }
+.card--feature .card-covers { gap: 0.8rem; margin-bottom: 1.4rem; }
+.card--feature .card-covers img { width: 92px; height: 138px; }
+@media (prefers-reduced-motion: reduce) { .card:hover .card-covers img { transform: none; } }

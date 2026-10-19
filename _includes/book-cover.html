@@ -1,0 +1,2 @@
+{%- assign src = '/assets/books/' | append: include.asin | append: '.jpg' | relative_url -%}
+<img class="book-cover" src="{{ src }}" alt="Cover of {{ include.title }}" width="110" loading="lazy" decoding="async">

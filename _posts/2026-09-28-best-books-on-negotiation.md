@@ -8,6 +8,7 @@ last_modified_at: 2026-09-28
 image: /assets/covers/best-books-on-negotiation.png
 pin_image: /assets/pins/best-books-negotiation-pin-a.png
 pin_thumb: /assets/pins/thumbs/best-books-negotiation-pin-a.jpg
+covers: "0143118757,0553384112,0670921343,0143110179,0062390678"
 ---
 
 Negotiation is not only for salary talks and business deals. You negotiate with a landlord, a client, a manager and sometimes with yourself. The books below teach different parts of it, so you can choose by the problem you have.
@@ -30,6 +31,8 @@ These five books cover the main sides of negotiation: a proven method, the resea
 
 ## 1. Getting to Yes, Roger Fisher, William Ury and Bruce Patton
 
+{% include book-cover.html asin="0143118757" title="Getting to Yes" %}
+
 A classic from the Harvard Negotiation Project. Its central idea is principled negotiation: separate the people from the problem, focus on interests instead of fixed positions, look for options that work for both sides, and judge outcomes by objective standards.
 
 **Best for:** anyone who wants one clear method they can apply to almost any negotiation.
@@ -38,6 +41,8 @@ A classic from the Harvard Negotiation Project. Its central idea is principled n
 <a href="https://www.amazon.de/dp/0143118757?tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
 
 ## 2. Negotiation Genius, Deepak Malhotra and Max Bazerman
+
+{% include book-cover.html asin="0553384112" title="Negotiation Genius" %}
 
 A research-informed guide from two business school professors. It focuses on preparing well, understanding the other side and avoiding the common mistakes people make at the table.
 
@@ -48,6 +53,8 @@ A research-informed guide from two business school professors. It focuses on pre
 
 ## 3. Difficult Conversations, Douglas Stone, Bruce Patton and Sheila Heen
 
+{% include book-cover.html asin="0670921343" title="Difficult Conversations" %}
+
 Written by members of the Harvard Negotiation Project, this book is about the conversations we avoid: feedback, conflict at work, personal disagreements. It breaks a hard conversation into what happened, the feelings involved, and what it says about identity.
 
 **Best for:** anyone whose main difficulty is starting or handling the conversation, not the deal itself.
@@ -57,6 +64,8 @@ Written by members of the Harvard Negotiation Project, this book is about the co
 
 ## 4. Negotiating the Nonnegotiable, Daniel Shapiro
 
+{% include book-cover.html asin="0143110179" title="Negotiating the Nonnegotiable" %}
+
 Shapiro looks at conflicts that are driven by emotion and identity rather than by interests alone, the kind where both sides feel they cannot give way. It offers ways to understand and ease those situations.
 
 **Best for:** family, workplace or community conflicts where feelings run high.
@@ -65,6 +74,8 @@ Shapiro looks at conflicts that are driven by emotion and identity rather than b
 <a href="https://www.amazon.de/dp/0143110179?tag=growthlane01-21" class="cta-button" rel="nofollow sponsored">Find it on Amazon</a>
 
 ## 5. Getting to Yes with Yourself, William Ury
+
+{% include book-cover.html asin="0062390678" title="Getting to Yes with Yourself" %}
 
 A shorter, more personal book about the negotiation that happens inside you first: your reactions, your fears and what you actually want. It builds on the ideas of *Getting to Yes*.
 

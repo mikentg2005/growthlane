@@ -6,6 +6,12 @@ layout: default
     <p class="post-eyebrow">{% include chips.html post=page %}</p>
     <h1 class="post-title">{{ page.title }}</h1>
     {% if page.description %}<p class="post-dek">{{ page.description }}</p>{% endif %}
+    {% if page.covers %}
+    <ul class="cover-strip" aria-label="Books covered in this article">
+      {% assign cover_ids = page.covers | split: ',' %}
+      {% for id in cover_ids %}<li><img src="{{ '/assets/books/' | append: id | append: '.jpg' | relative_url }}" alt="" width="64" loading="eager" decoding="async"></li>{% endfor %}
+    </ul>
+    {% endif %}
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">Published {{ page.date | date: "%B %-d, %Y" }}</time>
       {% assign pub_day = page.date | date: "%Y-%m-%d" %}
