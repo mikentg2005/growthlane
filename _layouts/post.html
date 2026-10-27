@@ -61,6 +61,8 @@ layout: default
       <p>I did not use this myself. This article is built from public sources such as publisher pages, author biographies and independent reviews, and it says what I could not verify. <a href="{{ '/how-i-review/' | relative_url }}">How I review</a>.</p>
       {% endif %}
     </aside>
+
+    {% include newsletter.html %}
   </div>
 
   {% assign others = site.posts | where_exp: "p", "p.url != page.url" %}

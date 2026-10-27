@@ -13,6 +13,11 @@ permalink: /:year/:month/:day/:title/
 google_analytics: "G-81K7MEF3K4"
 google_site_verification: "q210kZLjlbT8NhwaXmqj0RgJ_CiybSQSybIgW8QbZFA"
 
+# Newsletter (MailerLite embedded form). Leave blank to hide the signup box.
+mailerlite:
+  account: "2747749"
+  form: "jnCKBx"
+
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag

@@ -29,11 +29,22 @@ privacy policy for details.
 
 ## What I collect
 
-GrowthLane does not collect personal information directly: there are no
-accounts, comments or forms. The only data processed is the analytics data
-above, and only if you accept. If that changes in the future (for example,
-adding an email newsletter), this page will be updated and any signup will
-require your explicit, separate consent.
+GrowthLane has no accounts or comments, and you never need to sign up to read anything. The only data processed is:
+
+- analytics data, only if you accept the cookie notice (see above), and
+- your email address, only if you choose to subscribe to the optional newsletter (see below).
+
+## Email newsletter
+
+You can subscribe to get an email when a new article is published. The signup is optional.
+
+- **What is collected:** your email address, and the date and time you subscribed. The form is provided by our email service provider, MailerLite, which stores this data and sends the emails on our behalf. Its form is loaded only after you press the button to open it.
+- **Double opt-in:** after you submit your email, you receive a message asking you to confirm. You are subscribed only after you confirm.
+- **Unsubscribing:** every email has an unsubscribe link. You can also write to the address below and I will remove you.
+- **Why:** to send you the emails you asked for. I do not sell or share your address, other than with MailerLite to send them.
+- **How long:** until you unsubscribe.
+
+See [MailerLite's privacy policy](https://www.mailerlite.com/legal/privacy-policy) for how it handles data.
 
 ## Third-party links
 
@@ -45,9 +56,9 @@ this site, their own privacy policy applies, not this one.
 If you are in the EU/EEA, you have rights under GDPR regarding any personal
 data processed about you, including access, correction, and deletion.
 You can withdraw your analytics consent at any time with the Cookie settings
-link in the footer. Because this site does not directly collect personal data
-beyond optional analytics, there is usually nothing further to request from me;
-if you have a question, write to the address below.
+link in the footer, and you can unsubscribe from the newsletter at any time.
+To ask for access to, correction of, or deletion of your email address,
+write to the address below.
 
 ## Contact
 

@@ -665,3 +665,24 @@ a { color: var(--accent-ink); }
 html, body { max-width: 100%; overflow-x: clip; }
 .card-media, .feature-photo, .post-photo { min-width: 0; max-width: 100%; }
 .card-media img, .feature-photo img, .post-photo img { max-width: 100%; }
+
+/* ---------- Optional newsletter signup ---------- */
+.newsletter {
+  display: grid;
+  gap: 1rem 1.5rem;
+  align-items: center;
+  margin: 2rem 0 0.5rem;
+  padding: 1.25rem 1.4rem;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  background: var(--surface);
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+@media (min-width: 40rem) { .newsletter { grid-template-columns: minmax(0, 1fr) auto; } }
+.newsletter-title { font-family: var(--serif); font-weight: 600; font-size: 1.25rem; color: var(--ink); margin: 0 0 0.3rem; }
+.newsletter-text p:last-child { margin: 0; }
+.newsletter-note { margin: 0.5rem 0 0; font-size: 0.8rem; max-width: 16rem; }
+.newsletter-action[hidden], .newsletter-form[hidden] { display: none; }
+.newsletter-form { grid-column: 1 / -1; background: #fff; border-radius: 6px; padding: 0.25rem; }
