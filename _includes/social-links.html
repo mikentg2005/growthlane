@@ -1,0 +1,14 @@
+{% if site.social.instagram or site.social.pinterest %}
+<ul class="social-links" aria-label="GrowthLane on social media">
+  {% if site.social.instagram %}
+  <li><a class="social-link" href="{{ site.social.instagram }}" target="_blank" rel="noopener me" aria-label="GrowthLane on Instagram">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none"/></svg>
+    <span>Instagram</span></a></li>
+  {% endif %}
+  {% if site.social.pinterest %}
+  <li><a class="social-link" href="{{ site.social.pinterest }}" target="_blank" rel="noopener me" aria-label="GrowthLane on Pinterest">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10.6 17.8 12.6 9.6c.3-1.1 1.9-1.1 2 .2.1 1.6-1.2 3.4-2.6 3.1-1.1-.2-1.2-1.4-.9-2.4"/></svg>
+    <span>Pinterest</span></a></li>
+  {% endif %}
+</ul>
+{% endif %}

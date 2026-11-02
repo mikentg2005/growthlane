@@ -13,6 +13,11 @@ permalink: /:year/:month/:day/:title/
 google_analytics: "G-81K7MEF3K4"
 google_site_verification: "q210kZLjlbT8NhwaXmqj0RgJ_CiybSQSybIgW8QbZFA"
 
+# Social profiles shown as icons in the footer and on the About page. Leave blank to hide one.
+social:
+  instagram: "https://www.instagram.com/growthlane2026/"
+  pinterest: "https://www.pinterest.com/mikentg2005/"
+
 # Newsletter (MailerLite embedded form). Leave blank to hide the signup box.
 mailerlite:
   account: "2747749"
