@@ -1,16 +1,15 @@
 """Build an Instagram carousel (1080x1350) for a GrowthLane book-list article.
 
-Run from the repo root:  python pipeline/make_carousel.py
-Output: pipeline/social/instagram/habits/slide-1.png ... plus caption.txt
+Run from the repo root:  python pipeline/make_carousel.py [habits|communication]
+Output: pipeline/social/instagram/<name>/slide-1.png ... (caption.txt is written by hand)
 Text comes from the article's own Best for / Downside lines; nothing is invented.
 """
-import textwrap
+import sys
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = Path(__file__).resolve().parent / "social" / "instagram" / "habits"
 W, H = 1080, 1350
 PAPER, INK, MUTED, GREEN = "#f7f5ee", "#17201b", "#56635b", "#1d5f4a"
 WARN, WARN_SOFT, GREEN_SOFT = "#9a4a2b", "#f3e4dc", "#e3eee8"
@@ -58,23 +57,56 @@ def footer(d, n, total):
     d.text((W - 70 - d.textlength(t, font=f), H - 86), t, font=f, fill=MUTED)
 
 
-SLIDES = [
-    ("1847941834", "Atomic Habits", "James Clear",
-     "readers who want one complete, practical framework rather than scattered tips.",
-     "so widely discussed elsewhere that parts may feel familiar."),
-    ("081298160X", "The Power of Habit", "Charles Duhigg",
-     "readers who want to understand the mechanism before trying to change anything.",
-     "it explains the \u201cwhy\u201d better than it hands you a \u201chow.\u201d"),
-    ("0753553244", "Tiny Habits", "BJ Fogg",
-     "anyone who failed at ambitious habit goals and wants to start absurdly small.",
-     "celebrating every tiny win can feel a little forced at first."),
-    ("1399805789", "The Compound Effect", "Darren Hardy",
-     "readers who like a direct, no-nonsense style and want the case for small habits made plainly.",
-     "lighter on specific technique; more mindset than mechanism."),
-    ("1444769014", "Better Than Before", "Gretchen Rubin",
-     "readers whose generic habit method did not fit them personally.",
-     "with so many strategies on offer, it can feel less focused."),
-]
+CONFIGS = {
+    "habits": {
+        "title": "5 best books on building better habits",
+        "subtitle": "And which one to start with, based on how you think.",
+        "closing": "Who each book is for, where it falls short, and which to read first.",
+        "slides": [
+            ("1847941834", "Atomic Habits", "James Clear",
+             "readers who want one complete, practical framework rather than scattered tips.",
+             "so widely discussed elsewhere that parts may feel familiar."),
+            ("081298160X", "The Power of Habit", "Charles Duhigg",
+             "readers who want to understand the mechanism before trying to change anything.",
+             "it explains the “why” better than it hands you a “how.”"),
+            ("0753553244", "Tiny Habits", "BJ Fogg",
+             "anyone who failed at ambitious habit goals and wants to start absurdly small.",
+             "celebrating every tiny win can feel a little forced at first."),
+            ("1399805789", "The Compound Effect", "Darren Hardy",
+             "readers who like a direct, no-nonsense style and want the case for small habits made plainly.",
+             "lighter on specific technique; more mindset than mechanism."),
+            ("1444769014", "Better Than Before", "Gretchen Rubin",
+             "readers whose generic habit method did not fit them personally.",
+             "with so many strategies on offer, it can feel less focused."),
+        ],
+    },
+    "communication": {
+        "title": "5 best books on communication skills",
+        "subtitle": "From the basics to hard talks and speaking on the spot.",
+        "closing": "Who each book is for, where it falls short, and which to read first.",
+        "slides": [
+            ("1439199191", "How to Win Friends and Influence People", "Dale Carnegie",
+             "readers who want the foundation of dealing with people before more specialized books.",
+             "some examples feel dated, and some readers find the idea of influencing people manipulative."),
+            ("1260474186", "Crucial Conversations", "Joseph Grenny and co-authors",
+             "anyone who needs a practical method for difficult talks at work or at home.",
+             "one reviewer felt it reads like promotion for the authors’ own training."),
+            ("189200528X", "Nonviolent Communication", "Marshall Rosenberg",
+             "people who want to be heard in a conflict, or to listen with more empathy.",
+             "the language can feel unnatural at first; treat it as tools to try."),
+            ("0593243927", "Supercommunicators", "Charles Duhigg",
+             "readers who like story-driven books and want to understand why some conversations connect.",
+             "readers who know recent social science may find little new, and the how-to is general."),
+            ("1035024977", "Think Faster, Talk Smarter", "Matt Abrahams",
+             "people who freeze when they are put on the spot.",
+             "a quick read in the usual business self-help style; praise online is mostly publisher blurbs."),
+        ],
+    },
+}
+NAME = sys.argv[1] if len(sys.argv) > 1 else "habits"
+CFG = CONFIGS[NAME]
+SLIDES = CFG["slides"]
+OUT = Path(__file__).resolve().parent / "social" / "instagram" / NAME
 TOTAL = len(SLIDES) + 2
 
 
@@ -83,13 +115,13 @@ def cover_slide():
     d.text((70, 90), "BOOK LIST", font=font(LABEL, 34), fill=GREEN)
     f = font(HEAD, 104)
     y = 190
-    for line in wrap(d, "5 best books on building better habits", f, W - 140):
+    for line in wrap(d, CFG["title"], f, W - 140):
         d.text((70, y), line, font=f, fill=INK)
         y += 124
     d.rectangle([70, y + 20, 70 + 120, y + 28], fill=GREEN)
     fs = font(TEXT, 44)
     y += 70
-    for line in wrap(d, "And which one to start with, based on how you think.", fs, W - 140):
+    for line in wrap(d, CFG["subtitle"], fs, W - 140):
         d.text((70, y), line, font=fs, fill=MUTED)
         y += 60
     # row of the five covers
@@ -153,7 +185,7 @@ def last_slide():
         d.text(((W - w) / 2, y), line, font=f, fill=INK)
         y += 104
     fs = font(TEXT, 44)
-    for line in wrap(d, "Who each book is for, where it falls short, and which to read first.", fs, W - 200):
+    for line in wrap(d, CFG["closing"], fs, W - 200):
         w = d.textlength(line, font=fs)
         d.text(((W - w) / 2, y + 30), line, font=fs, fill=MUTED)
         y += 60
