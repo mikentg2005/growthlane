@@ -102,6 +102,28 @@ CONFIGS = {
              "a quick read in the usual business self-help style; praise online is mostly publisher blurbs."),
         ],
     },
+    "leadership": {
+        "title": "5 best books on leadership",
+        "subtitle": "For new managers: from your first team to feedback, coaching and ownership.",
+        "closing": "Who each book is for, where it falls short, and which to read first.",
+        "slides": [
+            ("0735219567", "The Making of a Manager", "Julie Zhuo",
+             "someone just promoted, or about to be, who wants a practical overview before more specialized books.",
+             "one reviewer found the advice clear but somewhat familiar; experienced managers may find little new."),
+            ("1250235375", "Radical Candor", "Kim Scott",
+             "managers who avoid giving honest feedback, and blunt managers who want to stay kind.",
+             "it can be used as an excuse to be mean; Scott says candor is judged by the person who hears it."),
+            ("0978440749", "The Coaching Habit", "Michael Bungay Stanier",
+             "managers who jump in with advice and want a short, practical habit to try.",
+             "reviews are mostly favorable, but no independent evidence on how well it works was found."),
+            ("1591846404", "Turn the Ship Around!", "L. David Marquet",
+             "anyone leading a team who wants to share decisions, and prefers a true story to a list of tips.",
+             "it is one leader’s account of one organization; it may not carry over to every team."),
+            ("1250183863", "Extreme Ownership", "Jocko Willink and Leif Babin",
+             "leaders who catch themselves making excuses, and readers who like direct military stories.",
+             "it offers no groundbreaking techniques, and the claim that it works for every leader goes too far."),
+        ],
+    },
 }
 NAME = sys.argv[1] if len(sys.argv) > 1 else "habits"
 CFG = CONFIGS[NAME]
