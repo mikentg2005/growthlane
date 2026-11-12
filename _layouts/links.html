@@ -1,0 +1,34 @@
+---
+layout: default
+---
+{%- assign utm = '?utm_source=instagram&utm_medium=social&utm_campaign=bio-links' -%}
+<div class="wrap wrap--measure links-page">
+  <header class="links-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.description %}<p class="post-dek">{{ page.description }}</p>{% endif %}
+    {% include social-links.html %}
+  </header>
+
+  <p class="links-note">Some links below are Amazon affiliate links (marked "Amazon"). I may earn a small commission if you buy, at no extra cost to you. <a href="{{ '/disclosure/' | relative_url }}">Full disclosure</a>.</p>
+
+  {% for list in site.data.book_lists %}
+  <section class="links-list" aria-labelledby="links-{{ forloop.index }}">
+    <h2 class="links-list-title" id="links-{{ forloop.index }}">{{ list.topic }}</h2>
+    <p class="links-kind">{% if list.basis == "first-hand" %}First-hand review{% else %}Research-based comparison{% endif %} <span aria-hidden="true">&middot;</span> <a href="{{ list.url | append: utm | relative_url }}">{% if list.books.size > 1 %}Read the full comparison{% else %}Read the review{% endif %}</a></p>
+    <ul class="links-books">
+      {% for book in list.books %}
+      <li class="links-book">
+        {% if book.cover %}<img class="links-cover" src="{{ '/assets/books/' | append: book.asin | append: '.jpg' | relative_url }}" alt="" width="44" height="66" loading="lazy" decoding="async">{% else %}<span class="links-cover links-cover--none" aria-hidden="true"></span>{% endif %}
+        <span class="links-book-text">
+          <span class="links-book-title">{{ book.title }}</span>
+          {% if book.author != "" %}<span class="links-book-author">{{ book.author }}</span>{% endif %}
+        </span>
+        <a class="links-amazon" href="https://www.amazon.de/dp/{{ book.asin }}?tag=growthlane01-21" rel="nofollow sponsored" aria-label="{{ book.title }} on Amazon">Amazon</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </section>
+  {% endfor %}
+
+  {% include newsletter.html %}
+</div>

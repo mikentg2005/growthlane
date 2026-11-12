@@ -1,0 +1,212 @@
+[
+  {
+    "topic": "Leadership",
+    "title": "5 Best Books on Leadership for New Managers",
+    "url": "/2026/11/11/best-books-on-leadership/",
+    "category": "Book list",
+    "basis": "research",
+    "books": [
+      {
+        "asin": "0735219567",
+        "title": "The Making of a Manager",
+        "author": "Julie Zhuo",
+        "cover": true
+      },
+      {
+        "asin": "1250235375",
+        "title": "Radical Candor",
+        "author": "Kim Scott",
+        "cover": true
+      },
+      {
+        "asin": "0978440749",
+        "title": "The Coaching Habit",
+        "author": "Michael Bungay Stanier",
+        "cover": true
+      },
+      {
+        "asin": "1591846404",
+        "title": "Turn the Ship Around!",
+        "author": "L. David Marquet",
+        "cover": true
+      },
+      {
+        "asin": "1250183863",
+        "title": "Extreme Ownership",
+        "author": "Jocko Willink and Leif Babin",
+        "cover": true
+      }
+    ]
+  },
+  {
+    "topic": "Communication Skills",
+    "title": "5 Best Books on Communication Skills",
+    "url": "/2026/10/27/best-books-on-communication-skills/",
+    "category": "Book list",
+    "basis": "research",
+    "books": [
+      {
+        "asin": "1439199191",
+        "title": "How to Win Friends and Influence People",
+        "author": "Dale Carnegie",
+        "cover": true
+      },
+      {
+        "asin": "1260474186",
+        "title": "Crucial Conversations",
+        "author": "Joseph Grenny and co-authors",
+        "cover": true
+      },
+      {
+        "asin": "189200528X",
+        "title": "Nonviolent Communication",
+        "author": "Marshall Rosenberg",
+        "cover": true
+      },
+      {
+        "asin": "0593243927",
+        "title": "Supercommunicators",
+        "author": "Charles Duhigg",
+        "cover": true
+      },
+      {
+        "asin": "1035024977",
+        "title": "Think Faster, Talk Smarter",
+        "author": "Matt Abrahams",
+        "cover": true
+      }
+    ]
+  },
+  {
+    "topic": "Building Better Habits",
+    "title": "5 Best Books on Building Better Habits",
+    "url": "/2026/10/02/best-books-on-building-better-habits/",
+    "category": "Book list",
+    "basis": "research",
+    "books": [
+      {
+        "asin": "1847941834",
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "cover": true
+      },
+      {
+        "asin": "081298160X",
+        "title": "The Power of Habit",
+        "author": "Charles Duhigg",
+        "cover": true
+      },
+      {
+        "asin": "0753553244",
+        "title": "Tiny Habits",
+        "author": "BJ Fogg",
+        "cover": true
+      },
+      {
+        "asin": "1399805789",
+        "title": "The Compound Effect",
+        "author": "Darren Hardy",
+        "cover": true
+      },
+      {
+        "asin": "1444769014",
+        "title": "Better Than Before",
+        "author": "Gretchen Rubin",
+        "cover": true
+      }
+    ]
+  },
+  {
+    "topic": "Mindset",
+    "title": "Flip Thinking by Berthold Gunster: An Honest Review",
+    "url": "/2026/09/29/flip-thinking-berthold-gunster-review/",
+    "category": "Book review",
+    "basis": "first-hand",
+    "books": [
+      {
+        "asin": "1529146283",
+        "title": "Flip Thinking",
+        "author": "Berthold Gunster",
+        "cover": false
+      }
+    ]
+  },
+  {
+    "topic": "Negotiation",
+    "title": "5 Best Books on Negotiation",
+    "url": "/2026/09/28/best-books-on-negotiation/",
+    "category": "Book list",
+    "basis": "research",
+    "books": [
+      {
+        "asin": "0143118757",
+        "title": "Getting to Yes",
+        "author": "Roger Fisher, William Ury and Bruce Patton",
+        "cover": true
+      },
+      {
+        "asin": "0553384112",
+        "title": "Negotiation Genius",
+        "author": "Deepak Malhotra and Max Bazerman",
+        "cover": true
+      },
+      {
+        "asin": "0670921343",
+        "title": "Difficult Conversations",
+        "author": "Douglas Stone, Bruce Patton and Sheila Heen",
+        "cover": true
+      },
+      {
+        "asin": "0143110179",
+        "title": "Negotiating the Nonnegotiable",
+        "author": "Daniel Shapiro",
+        "cover": true
+      },
+      {
+        "asin": "0062390678",
+        "title": "Getting to Yes with Yourself",
+        "author": "William Ury",
+        "cover": true
+      }
+    ]
+  },
+  {
+    "topic": "Sales and Persuasion",
+    "title": "6 Best Books on Sales and Persuasion",
+    "url": "/2026/09/25/best-books-on-sales-and-persuasion/",
+    "category": "Book list",
+    "basis": "research",
+    "books": [
+      {
+        "asin": "0062937650",
+        "title": "Influence: The Psychology of Persuasion",
+        "author": "Robert Cialdini",
+        "cover": true
+      },
+      {
+        "asin": "1847941494",
+        "title": "Never Split the Difference",
+        "author": "Chris Voss",
+        "cover": true
+      },
+      {
+        "asin": "0785288066",
+        "title": "The Psychology of Selling",
+        "author": "Brian Tracy",
+        "cover": true
+      },
+      {
+        "asin": "1786891719",
+        "title": "To Sell Is Human",
+        "author": "Daniel Pink",
+        "cover": true
+      },
+      {
+        "asin": "0566076896",
+        "title": "SPIN Selling",
+        "author": "Neil Rackham",
+        "cover": true
+      }
+    ]
+  }
+]
