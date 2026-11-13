@@ -1,5 +1,44 @@
 [
   {
+    "topic": "Procrastination",
+    "title": "5 Best Books on Procrastination",
+    "url": "/2026/11/13/best-books-on-procrastination/",
+    "category": "Book list",
+    "basis": "research",
+    "books": [
+      {
+        "asin": "0061703613",
+        "title": "The Procrastination Equation",
+        "author": "Piers Steel",
+        "cover": true
+      },
+      {
+        "asin": "1444765426",
+        "title": "Eat That Frog!",
+        "author": "Brian Tracy",
+        "cover": true
+      },
+      {
+        "asin": "1529146682",
+        "title": "The Now Habit",
+        "author": "Neil Fiore",
+        "cover": true
+      },
+      {
+        "asin": "0399168125",
+        "title": "Solving the Procrastination Puzzle",
+        "author": "Timothy Pychyl",
+        "cover": true
+      },
+      {
+        "asin": "0738211702",
+        "title": "Procrastination",
+        "author": "Jane Burka and Lenora Yuen",
+        "cover": true
+      }
+    ]
+  },
+  {
     "topic": "Leadership",
     "title": "5 Best Books on Leadership for New Managers",
     "url": "/2026/11/11/best-books-on-leadership/",
