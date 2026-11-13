@@ -1,2 +1,3 @@
+{%- assign dims = site.data.cover_dims[include.asin] -%}
 {%- assign src = '/assets/books/' | append: include.asin | append: '.jpg' | relative_url -%}
-<div class="book-cover-wrap"><img class="book-cover" src="{{ src }}" alt="Cover of {{ include.title }}" width="110" loading="lazy" decoding="async"></div>
+<div class="book-cover-wrap"><img class="book-cover" src="{{ src }}" alt="Cover of {{ include.title }}"{% if dims %} width="{{ dims[0] }}" height="{{ dims[1] }}"{% else %} width="110"{% endif %} loading="lazy" decoding="async"></div>

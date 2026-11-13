@@ -11,6 +11,7 @@ covers: "1439199191,1260474186,189200528X,0593243927,1035024977"
 image: /assets/covers/best-books-on-communication-skills.png
 pin_image: /assets/pins/best-books-communication-pin-a.png
 pin_thumb: /assets/pins/thumbs/best-books-communication-pin-a.jpg
+seo_title: "5 Best Books on Communication Skills"
 ---
 
 Communication is not one skill. Talking with a friend, disagreeing with a manager, being asked a question in a meeting and being heard in a conflict are different problems. The five books below each deal with a different one, so this list is about matching the book to the situation you actually have.

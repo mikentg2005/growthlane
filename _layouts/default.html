@@ -6,7 +6,8 @@
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f7f5ee" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#121815" media="(prefers-color-scheme: dark)">
-  {% seo %}
+  <title>{% if page.seo_full %}{{ page.seo_title }}{% elsif page.seo_title %}{{ page.seo_title }} | {{ site.title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  {% seo title=false %}
   {% feed_meta %}
   <link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="preload" href="{{ '/assets/fonts/public-sans-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>

@@ -16,3 +16,9 @@
 
 /assets/covers/*
   Cache-Control: public, max-age=2592000
+
+/assets/books/*
+  Cache-Control: public, max-age=2592000
+
+/assets/photos/*
+  Cache-Control: public, max-age=2592000

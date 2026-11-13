@@ -11,6 +11,7 @@ covers: "0735219567,1250235375,0978440749,1591846404,1250183863"
 image: /assets/covers/best-books-on-leadership.png
 pin_image: /assets/pins/best-books-leadership-pin-a.png
 pin_thumb: /assets/pins/thumbs/best-books-leadership-pin-a.jpg
+seo_title: "5 Best Books on Leadership for New Managers"
 ---
 
 Leadership is not one skill either. Getting your first team, giving hard feedback, getting people to think for themselves and owning a mistake are different problems. The five books below each take one of them seriously, so this list is about matching the book to the situation you are in.

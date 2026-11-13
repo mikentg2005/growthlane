@@ -11,6 +11,7 @@ pin_thumb: /assets/pins/thumbs/best-books-sales-persuasion-pin-a.jpg
 covers: "1439199191,0062937650,1847941494,0785288066,1786891719,0566076896"
 photo: /assets/photos/sales.jpg
 photo_alt: "A group of people talking around a table"
+seo_title: "6 Best Books on Sales and Persuasion"
 ---
 
 Most "best books" lists are just a row of famous covers. This one tries to do something more useful: for each book, what it is actually good at, where it falls short, and what kind of reader will get the most out of it.
