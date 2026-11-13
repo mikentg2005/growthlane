@@ -1,14 +1,37 @@
-<header class="site-header">
+<header class="site-header" data-site-header>
   <div class="wrap header-inner">
     <a class="wordmark" href="{{ '/' | relative_url }}" aria-label="GrowthLane, home">
       <span class="wordmark-mark" aria-hidden="true"></span>GrowthLane
     </a>
-    <nav class="site-nav" aria-label="Main">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" hidden>
+      <span class="nav-toggle-bars" aria-hidden="true"></span>
+      <span class="nav-toggle-label">Menu</span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home</a>
       <a href="{{ '/' | relative_url }}#articles">Articles</a>
-      <a href="{{ '/links/' | relative_url }}">Book list</a>
-      <a href="{{ '/how-i-review/' | relative_url }}">How I review</a>
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      <a href="{{ '/disclosure/' | relative_url }}">Disclosure</a>
+      <a href="{{ '/how-i-review/' | relative_url }}"{% if page.url == '/how-i-review/' %} aria-current="page"{% endif %}>How I review</a>
+      <a href="{{ '/about/' | relative_url }}"{% if page.url == '/about/' %} aria-current="page"{% endif %}>About</a>
+      <a class="nav-cta" href="{{ '/links/' | relative_url }}"{% if page.url == '/links/' %} aria-current="page"{% endif %}>Book list</a>
     </nav>
   </div>
 </header>
+<script>
+(function () {
+  var header = document.querySelector('[data-site-header]');
+  var btn = header && header.querySelector('.nav-toggle');
+  var nav = header && header.querySelector('.site-nav');
+  if (!btn || !nav) return;
+  var label = btn.querySelector('.nav-toggle-label');
+  header.classList.add('nav-js');
+  btn.hidden = false;
+  function set(open) {
+    nav.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    label.textContent = open ? 'Close' : 'Menu';
+  }
+  btn.addEventListener('click', function () { set(btn.getAttribute('aria-expanded') !== 'true'); });
+  nav.addEventListener('click', function (e) { if (e.target.closest('a')) set(false); });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') set(false); });
+})();
+</script>
