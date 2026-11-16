@@ -9,3 +9,6 @@ _site_cloudflare/
 growthlane-site.zip
 node_modules/
 .wrangler/
+pipeline/explainer/out/
+pipeline/explainer/models/
+__pycache__/
